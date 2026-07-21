@@ -1,115 +1,69 @@
-# Q1) take a user first namd and last name as input . print them in the formate 
+# 1) number is even or odd check 
 
-# firstname=input("Enter first name :")
-# lastname=input("Enter last name :")
+# num = int(input("enter any number :"))
 
-# print(f'Hello {lastname},{firstname}')
-
-# Q2) 
-
-# item = "apple"
-# price = 5.50
-
-# print(f'The price of {item} is {price} dollars ')
-
-# Q3) 
-
-# str = input("Enter staring :")
-
-# revered = str[::-1]
-
-# print("Reversed is :",revered)
-
-# if str == revered:
-#     print("It Is palindrome ")
+# if num % 2 == 0:
+#     print("number is Even ")
 # else:
-#     print("It Is not plindrome")
+#     print("Number is Odd")
 
+# -----------------------------------------------------------------
 
-# Q4) 
+# 2)  Categorize Age Groups Using Nested if-else
 
-# str  = input("Enter any string :")
+# age = int(input("Enter your age :"))
 
-# print("Uppercase :",str.upper())
-# print("Lowercase :",str.lower())
-# print("Title :",str.title())
+# if age >= 0:
+#     if age <= 12:
 
-# Q5) 
+#         print("Child")
 
-# sentence = " Machine Learning and AI are treanding"
-# b=sentence.split()
-# b[3] = "Artifical Inteligentce"
+#     else:
+#         if age <= 19:
 
-# print(" ".join(b))
+#             print("Teenager")
 
-# Q6) split string into list
+#         else:
+#             if age <= 59:
 
-text = "apple,banana,grapes"
+#                 print("Adult")
 
-fruits = text.split(",")
-print(fruits)
+#             else:
 
-words=["Python", "is", "awesome"]
-
-sentence =""
-
-for word in words:
-    sentence=sentence + word + " "
-
-print(sentence)
-
-
-
-# Q7) check if a string starts with "Hello"and ends with "World"
-#     - remove all non-alphabetic charachter from "Data123#science !"
-#     - reverce the string "python"
-
-# 1. Check if string starts with "Hello" and ends with "World"
-
-# text = input("Enter a string: ")
-
-# if text.startswith("Hello") and text.endswith("World"):
-#     print("String starts with Hello and ends with World")
+#                 print("Senior")
 # else:
-#     print("Condition not satisfied")
 
+#     print("Invalid Age")
 
-# 2. Remove all non-alphabetic characters
+#----------------------------------------------------------------
 
-# first way to solve this 
-#============================
-# text = "Data123#Science!"
+# 3) find largest number among of three number 
 
-# result = ""
+# a = int(input("Enter 1st number:"))
+# b = int(input("Enter 2nd number:"))
+# c = int(input("Enter 3rd number:"))
 
-# for ch in text:
-#     if ch.isalpha():
-#         result = result + ch
+# if a >=  b and a >= c:
+#     print("Largest number is:", a)
 
-# print(result)
+# elif b >= a and b >= c:
+#     print("Largest number is:", b)
 
-#====================================
+# else:
+#     print("Largest number is:", c)
 
-# second way to solve this program 
-#====================================
-# str="Data123#Science!"
-# strlest=(list(str))
-# stralpha=""
-# for i in strlest:
-#     if(i.isalpha()):
-#         stralpha+= i
-    
-# print(stralpha)
+#------------------------------------------------------------------
 
+# 4) a Number is Neutral, Positive, or Negative Using Ladder if Statement
 
+no = int(input("Enter a number: "))
 
-# 3. Reverse the string "Python"
+if no > 0:
+    print("Positive Number")
 
-# text = "Python"
+elif no  < 0:
+    print("Negative Number")
 
-# reverse = ""
+else:
+    print("Neutral Number")
 
-# for ch in text:
-#     reverse = ch + reverse
-
-# print(reverse)
