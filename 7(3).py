@@ -72,10 +72,10 @@
 
 # 7) write a program to concatenate two 1D array in to a single array 
 
-arr1 = [1,2,3]
-arr2 = [9,10]
+# arr1 = [1,2,3]
+# arr2 = [9,10]
 
-print(arr1 + arr2) 
+# print(arr1 + arr2) 
     
 
 
